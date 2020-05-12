@@ -1,8 +1,8 @@
 {
   "files.exclude": {
     "node_modules/": false,
-    "LICENSE": true,
-    "README.md": true,
+    "LICENSE": false,
+    "README.md": false,
   },
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
