@@ -14,9 +14,13 @@
   "html.format.wrapAttributes": "auto",
   "html.format.indentInnerHtml": false,
   "html.format.endWithNewline": true,
+  "cSpell.allowCompoundWords": true,
   "cSpell.words": [
     "buildpacks",
     "crossorigin",
     "esversion"
+  ],
+  "cSpell.enableFiletypes": [
+    "!html"
   ]
 }
