@@ -1,0 +1,45 @@
+{
+  "name": "@ranken/example_express",
+  "version": "1.0.0",
+  "description": "Express.js Example Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "nodemon": "nodemon -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulsmithkc/base-node-curriculum.git"
+  },
+  "author": "Paul Smith",
+  "license": "MIT",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "engines": {
+    "node": "12.16.3"
+  },
+  "env": {
+    "DEBUG": {
+      "description": "Which debug channels should be monitored?",
+      "value": "app:*"
+    }
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "jshint": "^2.11.0",
+    "nodemon": "^2.0.3"
+  }
+}
