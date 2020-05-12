@@ -22,5 +22,7 @@
   ],
   "cSpell.enableFiletypes": [
     "!html"
-  ]
+  ],
+  "eslint.enable": true,
+  "eslint.packageManager": "npm"
 }
