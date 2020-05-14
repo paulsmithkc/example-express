@@ -28,9 +28,9 @@ app.post('/contact', (request, response) => {
   debug(`\tmessage: ${params.message}`);
 
   if (params.email && params.subject && params.message) {
-    response.sendFile(path.join(__dirname, 'public/contact_sent.html'));
+    response.type('text/plain').send('Message has been sent.');
   } else {
-    response.sendFile(path.join(__dirname, 'public/contact_error.html'));
+    response.status(400).type('text/plain').send('Please complete all fields.');
   }
 });
 
