@@ -40,6 +40,6 @@ app.use((request, response) => {
 });
 
 // Bind the server to an http port
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   debug(`Server running at http://${hostname}:${port}/`);
 });
