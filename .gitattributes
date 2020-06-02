@@ -1,0 +1,6 @@
+# Set the language of particular file extensions
+#*.js linguist-language=JavaScript
+#*.json linguist-language=JavaScript
+
+# ignore some files when determining the project's primary language
+public/* linguist-vendored
